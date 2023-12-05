@@ -3,7 +3,8 @@ import {StyleSheet, Text, View} from 'react-native';
 import {A} from './src/views/modules/A/A';
 import {B} from './src/views/modules/B/B';
 
-function App(): JSX.Element {
+type IAProps = {};
+export const App: React.FC<IAProps> = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>App</Text>
@@ -11,7 +12,7 @@ function App(): JSX.Element {
       <B />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
